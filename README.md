@@ -2,7 +2,7 @@
 
 *Summaraii* is a powerful web application that empowers content creators by summarizing relevant information from various reference sources. Whether you're dealing with web URLs, PDFs, or plain text documents, Summaraii leverages advanced Language Learning Models (LLMs) to generate concise summaries tailored to the specific topic or title you provide.
 
-### ⚔️Access Summaraii at: [Summaraii.app](https://summaraii.streamlit.app/)
+### ⚔️Access Summaraii at: [Summaraii.app]()
 
 # ✨ Features
 
