@@ -22,7 +22,7 @@ svg_code = '''
   <defs>
     <linearGradient id="maroonGoldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color: maroon; stop-opacity: 1" />
-      <stop offset="100%" style极stop-color: gold; stop-opacity: 1" />
+      <stop offset="100%" style="stop-color: gold; stop-opacity: 1" />
     </linearGradient>
   </defs>
   <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -30,12 +30,12 @@ svg_code = '''
   <g id="SVGRepo_iconCarrier">
     <path id="_x33_" fill="url(#maroonGoldGradient)" d="M295.3,130.2c-15.4-4.8-17.2-13.5-22.7-18.8c-11.7-11.7-27.1-1.4-33.2,3.4c-6.6-37.4-33.5-65.1-83.2-65.1 
     c-58.2,0-85.3,38.1-85.3,85.3s28,111.9,85.3,111.9s85.3-64.6,85.3-111.9c0-0.5,0-1.1,0-1.6c10.5,3,11.2,14.9,11.2,14.9 
-    s0,24.1,21.3,24.1极-7.8-14.4-2.8极21.8-2.8-29.3c0-4.8-1.6-8.3-3.7-11.2C272.8,135.极,284.7,141.2,295.3,130.2z M221.2,145.5 
+    s0,24.1,21.3,24.1c-7.8-14.4-2.8-21.8-2.8-29.3c0-4.8-1.6-8.3-3.7-11.2C272.8,135.7,284.7,141.2,295.3,130.2z M221.2,145.5 
     c0,11.7-9.6,21.5-21.3,24.1c-5,1.1-24.5,2.8-44,2.8l0,0l0,0c-19.5,0-39-1.6-44-2.8c-11.7-2.3-21.3-12.2-21.3-24.1v-6 
     c0-6,5-10.5,10.5-10.5c18.6,0,25.4,5.3,54.6,5.3s36-5.3,54.6-5.3c5.5,0,10.5,4.8,10.5,10.5v6H221.2z" />
     <path id="_x32__1_" fill="url(#maroonGoldGradient)" d="M136.9,157.9c-0.5,0-0.7,0-1.4-0.2l-30.3-11c-2.1-0.7-3.2-3-2.3-5c0.7-2.1,3-3.2,5-2.3l30.3,11 
     c2.1,0.7,3.2,3,2.3,5C140.1,157,138.5,157.9,136.9,157.9z" />
-    <path id="_x32_" fill="url(#maroonGoldGradient)" d="M175.1,157.9c-1.6,0-3.2-1.1-3.7-2.8c-0.7-2.1,0.2-4.4,2.3-5l30.3-11c2.1-0.7,4.4,0.2,5,极.3 
+    <path id="_x32_" fill="url(#maroonGoldGradient)" d="M175.1,157.9c-1.6,0-3.2-1.1-3.7-2.8c-0.7-2.1,0.2-4.4,2.3-5l30.3-11c2.1-0.7,4.4,0.2,5,2.3 
     c0.7,2.1-0.2,4.4-2.3,5l-30.3,11C176.3,157.9,175.8,157.9,175.1,157.9z" />
     <path id="_x31__1_" fill="url(#maroonGoldGradient)" d="M90.5,48.6c-2.1-2.1-5.3-2.1-7.6,0l-6.6,6.6L29.6,8c-3-3-7.6-3-10.3,0L11,16.2
     c-3,3-3,7.6,0,10.3l46.8,46.8L51.1,80c-2.1,2.1-2.1,5.3,0,7.6c1.1,1.4,2.3,1.8,3.7,1.8s2.8-0.5,3.7-1.6l6.6-6.6l9.4,9.4 
@@ -46,9 +46,9 @@ svg_code = '''
 '''
 
 # Set up the Streamlit app configuration
-st.set_page_config(page_title="Summaraii: Cut the Clutter, Keep the Core", page_icon="icon.png", layout="wide")
+st.set_page_config(page_title="Summaraiii 🗡️ : Cut the Clutter, Keep the Core", page_icon="icon.png", layout="wide")
 
-# CSS for Summaraii styling
+# CSS for Summaraiii styling
 st.markdown("""
     <style>
     .main-header {
@@ -116,7 +116,7 @@ st.markdown(f'''
     <div class="header-container">
         <div>{svg_code}</div>
         <div>
-            <h1 class="main-header">Summaraii 🗡️</h1>
+            <h1 class="main-header">Summaraiii 🗡️</h1>
             <h3 class="sub-header">Cut the Clutter, Keep the Core</h3>
         </div>
     </div>
@@ -125,18 +125,18 @@ st.markdown(f'''
 # Sidebar for Groq API Key and Search Query
 with st.sidebar:
     st.markdown(f'<div style="text-align: center;">{svg_code}</div>', unsafe_allow_html=True)
-    st.header("  ⚔️ 🗡️ Summaraii 🗡️ ⚔️")
+    st.header("  ⚔️ 🗡️ Summaraiii 🗡️ ⚔️")
     st.markdown("Summarize reference content for content creators🥷")
     st.subheader("API Configuration")
     groq_api_key = st.text_input("Groq API Key", value="", type="password", placeholder="⚔️Enter Groq API Key here⚔️")
     st.subheader("Topic")
     search_query = st.text_input("Enter the Topic/Title", placeholder="e.g. Python")
-    st.subheader("About Summaraii ✒️")
-    st.markdown("**Summaraii** delivers a concise summary, focusing only on relevant data, just like a samurai cuts down to the essentials.")
+    st.subheader("About Summaraiii ✒️")
+    st.markdown("**Summaraiii** delivers a concise summary, focusing only on relevant data, just like a samurai cuts down to the essentials.")
     st.subheader("Tips for Best Results:")
     st.markdown("""
                 1. Ensure that the URLs and PDFs you provide contain content relevant to the topic you've specified.
-                2. If a URL or PDF does not contain relevant content, Summaraii will notify you.
+                2. If a URL or PDF does not contain relevant content, Summaraiii will notify you.
                 3. For optimal summaries, make sure to provide clear and specific topics.
             """)
 
@@ -169,7 +169,7 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     st.subheader("📺 YouTube Video URLs")
-    video_urls = st.text_area("Enter YouTube Video URLs (one per line)", placeholder="e.g. https://www.youtube极com/watch?v=dQw4w9WgXcQ" ,height=30)
+    video_urls = st.text_area("Enter YouTube Video URLs (one per line)", placeholder="e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ" ,height=30)
 
     st.subheader("🌐 Website URLs")
     website_urls = st.text_area("Enter Website URLs (one per line)", placeholder="e.g. https://www.example.com", height=30)
@@ -311,7 +311,7 @@ def create_download_data(summary, topic, sources):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
     download_data = f"""
-# Summaraii Summary Report
+# Summaraiii Summary Report
 ## Generated on: {timestamp}
 ## Topic: {topic}
 
@@ -322,7 +322,7 @@ def create_download_data(summary, topic, sources):
 {chr(10).join([f"- {source}" for source in sources])}
 
 ---
-*Generated by Summaraii 🗡️ - Cut the Clutter, Keep the Core*
+*Generated by Summaraiii 🗡️ - Cut the Clutter, Keep the Core*
 """
     return download_data
 
@@ -503,7 +503,7 @@ if st.button("Summarize Content", key="summarize"):
                 st.download_button(
                     label="📄 Download as TXT",
                     data=download_content,
-                    file_name=f"summaraii_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
+                    file_name=f"summaraiii_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt",
                     mime="text/plain",
                     key="download_txt",
                     use_container_width=True,
@@ -514,7 +514,7 @@ if st.button("Summarize Content", key="summarize"):
                 st.download_button(
                     label="📝 Download as MD",
                     data=download_content,
-                    file_name=f"summaraii_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md",
+                    file_name=f"summaraiii_summary_{datetime.now().strftime('%Y%m%d_%H%M%S')}.md",
                     mime="text/markdown",
                     key="download_md",
                     use_container_width=True,
@@ -528,4 +528,4 @@ if st.button("Summarize Content", key="summarize"):
 
 # Add footer
 st.markdown("---")
-st.markdown("<div style='text-align: center; color: #666;'>Summaraii 🗡️ - Cutting through the noise to find what matters</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: #666;'>Summaraiii 🗡️ - Cutting through the noise to find what matters</div>", unsafe_allow_html=True)
