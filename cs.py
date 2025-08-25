@@ -125,7 +125,7 @@ st.markdown(f'''
 # Sidebar for Groq API Key and Search Query
 with st.sidebar:
     st.markdown(f'<div style="text-align: center;">{svg_code}</div>', unsafe_allow_html=True)
-    st.header("  ⚔️ 🗡️ Summaraiii 🗡️ ⚔️")
+    st.header("   🗡️ Summaraiii 🗡️ ")
     st.markdown("Summarize reference content for content creators🥷")
     st.subheader("API Configuration")
     groq_api_key = st.text_input("Groq API Key", value="", type="password", placeholder="⚔️Enter Groq API Key here⚔️")
