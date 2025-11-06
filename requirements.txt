@@ -1,14 +1,11 @@
 streamlit
-langchain
+langchain-core
 langchain-community
 langchain-groq
+langchain-text-splitters
 youtube-transcript-api
-pytube
 beautifulsoup4
 requests
 validators
 pypdf
 python-dotenv
-
-
-
