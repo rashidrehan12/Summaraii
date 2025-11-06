@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from langchain_core.documents import Document
 import validators
 import requests
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 import re
 from youtube_transcript_api import YouTubeTranscriptApi
 import tempfile
