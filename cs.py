@@ -1,9 +1,9 @@
 import streamlit as st
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from langchain_groq import ChatGroq
 from langchain_community.document_loaders import PyPDFLoader
 from bs4 import BeautifulSoup
-from langchain.schema import Document
+from langchain_core.documents import Document
 import validators
 import requests
 from langchain.text_splitter import RecursiveCharacterTextSplitter
